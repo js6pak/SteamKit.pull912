@@ -9,7 +9,7 @@ namespace SteamKit.pull912
     {
         public override bool Execute()
         {
-            var path = Path.Combine("bin", "Debug", "netcoreapp3.1", "SteamKit.pull912.dll");
+            var path = Path.Combine("bin", "Debug", "netcoreapp3.1", "SteamKit2.dll");
             Log.LogMessage(MessageImportance.High, path);
             Assembly.LoadFrom(path);
             Program.Main();
