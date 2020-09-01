@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -10,7 +10,7 @@
         <PackageReference Include="SteamKit2" Version="2.3.0" />
     </ItemGroup>
 
-    <UsingTask TaskName="Test" AssemblyFile="$(OutputPath)$(AssemblyName).dll" />
+    <UsingTask TaskName="Test" AssemblyFile="$(OutputPath)$(AssemblyName).exe" />
     <Target Name="TestTarget" AfterTargets="Build">
         <Test />
     </Target>

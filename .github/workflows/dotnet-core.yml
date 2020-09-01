@@ -13,9 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
-      - name: Install dependencies
-        run: dotnet restore
-      - name: Build
-        run: dotnet build
+#      - name: Build
+      #        run: dotnet build
       - name: Test
         run: dotnet run --project SteamKit.pull912/SteamKit.pull912.csproj
